@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       
+    <div class="parent-div">
+        <p class="child-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur veniam veritatis necessitatibus quo dignissimos esse accusamus provident nam totam praesentium!</p>
+        <button class="btn" >click me</button>
+
+    </div>
+    <div class="parent-div">
+        <p class="child-paragraph">First, select the parent of the element whose siblings that you want to find.</p>
+        <button class="btn" >click me</button>
+
+    </div>
+    <div class="parent-div">
+        <p class="child-paragraph">Fourth, select the next sibling of the first element.</p>
+        <button class="btn" >click me</button>
+
+    </div>
+    <div class="parent-div">
+        <p class="child-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur veniam veritatis necessitatibus quo dignissimos esse accusamus provident nam totam praesentium!</p>
+        <button class="btn" >click me</button>
+
+    </div>
+    <div class="parent-div">
+        <p class="child-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur veniam veritatis necessitatibus quo dignissimos esse accusamus provident nam totam praesentium!</p>
+        <button class="btn" >click me</button>
+
+    </div>
+    </div>
+    <script>
+
+       document.querySelector(".container").addEventListener("click", function(e) {
+        const tgt = e.target;
+        if (tgt.classList.contains("btn")) {
+            var sibling = tgt.previousElementSibling
+            console.log( sibling.innerHTML);
+        
+        }
+    });
+
+
+    </script>
+    
+</body>
+</html>
